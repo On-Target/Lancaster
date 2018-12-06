@@ -181,7 +181,7 @@ justify-self: center;
     .main {
         display: grid;
         grid-template-columns: 35% 65%;
-        grid-template-rows: 40% 60%;
+        grid-template-rows: 30% 70%;
         grid-template-areas: "h c" "f c";
         align-self: center;
         justify-self: center;
@@ -204,6 +204,8 @@ justify-self: center;
 
     .header {
         grid-area: h;
+        align-self: end;
+        grid-template-rows: 1fr 40px;
     }
 
     .nav {
@@ -218,14 +220,24 @@ display:none;
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        padding: 0px 0px 0 0;    
+    }
 
-    
+    .form p {
+        font-size: 1.6rem;
+    margin-bottom: -50px;
+    text-align: center;
+    }
+
+    .hs-input {
+        width: 100%;
     }
 
     .item {
         display: grid;
-        grid-template-columns: 300px auto 200px;
+        grid-template-columns: 250px auto 130px;
         grid-template-areas: "a b c";
+        background-size: cover !important;
     }
     
     .caption {
@@ -240,6 +252,7 @@ display:none;
     right: unset;
     left: unset;
     grid-template-areas: unset;
+    background: #fff;
     }
     
     .caption-text {
@@ -252,5 +265,66 @@ display:none;
         position: relative;
     }
 
+    .hs-form-required {
+
+        display: none !important;
+    }
+
+    .owl-dots {display: none;}
+    /* .owl-dots {
+        grid-area: f;
+        position: fixed;
+        bottom: 7px;
+        width: 150px;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr;
+        margin: 0 0;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        z-index: 99999;
+        text-align: center;
+        right: 0;
+        top: 0;
+        background: #fff;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: 100vh;
+    } */
+
+    .content {
+        grid-area: c;
+        align-self: center;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr 100px;
+        display: grid;
+        grid-template-areas: ". . c";
+        width: 100%;
+    }
+
+    .slide-nav {
+        grid-area: c;
+        background: #fff;
+        width: 100%;
+    
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        display:grid;
+        grid-template-areas: "a" "b" "c";
+    }
+
+    .slide-nav-wrapper {
+        grid-area:b;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
 
 }

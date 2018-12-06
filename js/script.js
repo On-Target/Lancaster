@@ -7,7 +7,14 @@ $(document).ready(function(){
         items:1,
         loop:true,
         smartSpeed:450
-    });
+    })
+
+     // Listen to owl events:
+ .on('changed.owl.carousel', function(event) {
+    var currentItem = event.item.index;
+    window.location.hash = currentItem + 1;
+    console.log(currentItem);
+})
 
 
 $('#details-btn').on('click',function(){
@@ -22,12 +29,16 @@ $('#details-btn').on('click',function(){
 
 
 
-});
+})
 
 
 // $( "#target" ).click(function() {
 //     alert( "Handler for .click() called." );
 //   });
+
+
+
+
 
   });
 

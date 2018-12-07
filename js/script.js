@@ -31,6 +31,20 @@ $('#details-btn').on('click',function(){
 
 })
 
+$('#contact-btn').on('click',function(){
+
+    //$(".caption-text").css('display','block');
+    $(".slide-form").toggle();
+
+    $(this).text(function(i, text){
+        return text === "Hide Contact" ? "Show Contact" : "Hide Contact";
+    })
+
+
+
+
+})
+
 
 // $( "#target" ).click(function() {
 //     alert( "Handler for .click() called." );

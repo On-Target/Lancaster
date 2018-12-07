@@ -1,5 +1,9 @@
 html,body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: adobe-garamond-pro, serif;
+
+font-weight: 400;
+
+font-style: normal;
     margin:0;
 }
 
@@ -177,6 +181,31 @@ justify-self: center;
     padding: 20px;
 }
 
+.item {
+    background-position: center;
+    height: 100vh;
+}
+
+.form {
+display:none;
+
+}
+
+.slide-form {
+    display: none;
+    grid-row: 2/3;
+   
+    background: #fff;
+    margin: 0 10px;
+    padding: 20px;
+    width: 70%;
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+    top: -15%;
+    position: relative;
+}
+
 @media(min-width:1024px) {
     .main {
         display: grid;
@@ -186,6 +215,7 @@ justify-self: center;
         align-self: center;
         justify-self: center;
         height: 100vh;
+        overflow:hidden;
     }
 
     .owl-carousel {
@@ -223,10 +253,33 @@ display:none;
         padding: 0px 0px 0 0;    
     }
 
-    .form p {
+    .form p:first-of-type {
         font-size: 1.6rem;
     margin-bottom: -50px;
     text-align: center;
+    }
+
+    .form p {
+        font-size: 10px;
+    text-align: center;
+    }
+
+    .form p span.line {
+        border-bottom: 1px solid #000;
+        width: 150px;
+        display: inline-block;
+        top: -2px;
+        position: relative;
+        margin: 0 5px;
+    }
+
+    .social p span.line {
+        border-bottom: 1px solid #000;
+        width: 150px;
+        display: inline-block;
+        top: -2px;
+        position: relative;
+        margin: 0 5px;
     }
 
     .hs-input {
@@ -266,7 +319,7 @@ display:none;
     }
 
     .hs-form-required {
-
+        color: red;
         display: none !important;
     }
 
@@ -326,5 +379,48 @@ display:none;
     .nav-item {
         margin: 20px 0;
     }
+
+    .field {
+        margin-bottom: 0 !important;
+    }
+
+    .caption p {
+font-size: 13px;
+    }
+
+    .caption p:first-of-type {
+        font-size: 16px;
+            }
+
+            .caption-text > div {
+                background: #000;
+                height: 1px;
+                width: 100%;
+            }
+
+            .social {
+                position: fixed;
+                transform: rotate(-90deg);
+                left: -7vw;
+                bottom: 30vh;
+                font-size: 13px;
+                color: #000;
+            }
+
+            .form > .social p {margin:0;
+            font-size:13px;
+            }
+
+            .social a {
+                padding:0 15px;
+                color:#000;
+                text-decoration:none;
+            }
+
+            #label-email-0d2a44f8-468c-4cbb-9170-3e0722523256 > span.hs-form-required {
+                display: none !important;
+            }
+
+
 
 }

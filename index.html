@@ -1,6 +1,13 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+          <meta charset="utf-8">
+        <title>{{ content.html_title }}</title>
+        <meta name="description" content="{{ content.meta_description }}">
+        {{ standard_header_includes }}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,7 +15,9 @@
 
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'/>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'/>
-<link rel="stylesheet" href="/Lancaster/css/style.css">
+<!-- <link rel="stylesheet" href="/css/style.css"> -->
+  
+  <link rel="stylesheet" href="{{ get_public_template_url('LC_Custom/assets/lp1_classic.css') }}">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'/>
 <link rel="stylesheet" href="https://use.typekit.net/gqy2vkj.css">
 </head>
@@ -46,7 +55,7 @@
 
 
 <div class="owl-carousel custom1">
-<div class="item" style="background: url('http://archipelagohawaii.com/wp-content/uploads/2015/11/Sustainable-Style-at-Waahila-16-1184x789.jpg')">
+<div class="item" style="background: url('https://i.pinimg.com/originals/3d/31/61/3d3161fc9873cdb012aea48db72bc121.jpg')">
 
 
 <div class="caption">
@@ -114,7 +123,7 @@
 
 
 <div class="header">
-    <img src="https://www.lancasterhomesusa.com/images/logo-lg.png" alt="">
+    <img src="https://cdn2.hubspot.net/hubfs/5084418/Lancaster_Homes_November2018/Image/logo-lg.png" alt="">
 <p>281.555.5555 | 12345 Anywhere St., Houston, Tx 777777</p>
 </div>
 <div class="content">
@@ -146,6 +155,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-<script src="/Lancaster/js/script.js"></script>
+<!-- <script src="/js/script.js"></script> -->
+  
+  <script src="{{ get_public_template_url('LC_Custom/assets/lp1_classic.js') }}"></script>
+  
+          {{ standard_footer_includes }}
 </body>
 </html>
